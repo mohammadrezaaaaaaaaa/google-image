@@ -94,7 +94,6 @@
         }
 
         .container {
-            position: relative;
             text-align: center;
         }
 
@@ -104,14 +103,14 @@
             font-family: arial, sans-serif;
             font-weight: normal;
             line-height: 16px;
-            position: absolute;
-            right: 530px;
-            bottom: 0px;
+            position: relative;
+            right: -105px;
+            bottom: 15px;
 
 
         }
         #search-container {
-            padding: 20px;
+            padding: 10px;
         }
 
         form {
@@ -294,13 +293,14 @@
 
     <div id="search-container" class="container-fluid">
         <div id="box" class="row">
-            <form action="https://images.google.com/search" id="search-form">
-                <div id="input-group" class="input-group mb-4 input-group-sm d-block>
+            <form action="https://google.com/search" id="search-form">
+                <div id="input-group" class="input-group mb-5 input-group-sm d-block>
                     <span class=" input-group-text"
                     style="padding:0;background-color: white;border-color:transparent;">
                     <i id="search-icon" class="material-icons">search</i>
                     </span>
-                    <input type="text" class="form-control" name="q" style="border: 0 transparent;">
+                    <input  type="text" class="form-control" name="q" style="border: 0 transparent;">
+                    <input  type="hidden" class="form-control" name="tbm" value="isch" style="border: 0 transparent;">
                     <a href="https://www.google.com" class="btn btn-basic">
                         <i id="cam-icon" class="material-icons" data-bs-toggle="tooltip" data-bs-placement="bottom"
                             title="search by image">&#xe3b0;
