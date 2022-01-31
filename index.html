@@ -106,9 +106,109 @@
             line-height: 16px;
             position: absolute;
             right: 530px;
-            bottom: 3px;
+            bottom: 0px;
 
 
+        }
+        #search-container {
+            padding: 20px;
+        }
+
+        form {
+            padding-top: 3px;
+            padding-bottom: 0px;
+            display: flex;
+            width: auto;
+            max-width: 584px;
+            z-index: 3;
+            margin: 0 auto 0 auto;
+            height: 44px;
+            background: #fff;
+            border: 1px solid #dfe1e5;
+            box-shadow: none;
+            border-radius: 24px;
+            box-sizing: border-box;
+        }
+
+        #box {
+            border: 1px solid transparent;
+            height: 44px;
+            border-radius: 24px;
+            width: auto;
+            max-width: 584px;
+            background-color: white;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 6px;
+            box-sizing: border-box;
+        }
+
+        #search-icon {
+            font-size: 24px;
+            color: #9aa0a6;
+            background-color: white;
+            width: 20;
+            height: 20;
+            padding-top: 6px;
+            padding-right: 13px;
+        }
+        #cam-icon{
+            width: 24px;
+            height: 24px;
+            text-align: center;
+        }
+
+        #mic-icon {
+            border: 0;
+            color: #202124;
+            width: 24px;
+            height: 24px;
+            align-items: center;
+        }
+        #search-icon-2{
+            width: 24px;
+            height: 24px;
+            text-align: center;
+        }
+        div.input-group > a:hover{
+            text-decoration: none;
+            background-color: white;
+
+        }
+
+
+
+        .form-control {
+            border: 0;
+            padding: 0px 0px 0px 0px;
+        }
+
+
+        .button4 {
+            background-color: #f8f9fa;
+            color: #3c4043;
+            font-family: arial, sans-serif;
+            font-size: 14px;
+            border: 1px solid #f8f9fa;
+            border-radius: 4px;
+            margin-right: 4px;
+            margin-left: 4px;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+
+        .button4:hover {
+            background-color: #e7e7e7;
+        }
+
+        #M2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 20px 0px 20px;
+            height: 46.8px;
         }
 
 
@@ -181,6 +281,9 @@
             </script
         </div>
     </div>
+
+
+
     <div class="container">
         <img src="./googlelogo_color_272x92dp.png" alt="Google logo">
         <div id="img2">images</div>
@@ -189,6 +292,41 @@
 
 
 
+    <div id="search-container" class="container-fluid">
+        <div id="box" class="row">
+            <form action="https://images.google.com/search" id="search-form">
+                <div id="input-group" class="input-group mb-4 input-group-sm d-block>
+                    <span class=" input-group-text"
+                    style="padding:0;background-color: white;border-color:transparent;">
+                    <i id="search-icon" class="material-icons">search</i>
+                    </span>
+                    <input type="text" class="form-control" name="q" style="border: 0 transparent;">
+                    <a href="https://www.google.com" class="btn btn-basic">
+                        <i id="cam-icon" class="material-icons" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            title="search by image">&#xe3b0;
+
+                        </i>
+                    </a>
+                    <a href="https://www.google.com" class="btn btn-basic">
+                        <i id="mic-icon" class="material-icons" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            title="search by voice">&#xe31d;
+
+                        </i>
+                    </a>
+                    <button class="btn" type="submit"><i id="search-icon-2" class="material-icons">search
+                        </i></button> 
+                </div>
+                <script>
+                    // Initialize tooltips
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                        return new bootstrap.Tooltip(tooltipTriggerEl)
+                    })
+                </script>
+            </form>
+            
+        </div>
+    </div>
 
 
 
