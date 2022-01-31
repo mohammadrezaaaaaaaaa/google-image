@@ -83,6 +83,65 @@
             border-radius: 4px;
 
         }
+        img {
+            margin-top: 101.6px;
+        }
+        span.bg-light{
+            width: 51.5px;
+            height: 16px;
+            color: #4285f4;
+            font-size: 16px;
+            font-family: arial, sans-serif;
+            font-weight: normal;
+            line-height: 16px;
+            position: relative;
+            left: 863px;
+            top:0px;
+
+            
+        }
+
+
+
+        #M2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 20px 0px 20px;
+            height: 46.8px;
+        }
+
+        footer.flex-container.div {
+            align-items: center;
+        }
+
+        footer {
+            background-color: #f2f2f2;
+            position:fixed;
+            bottom: 0px;
+            width: 100%;
+        }
+
+        footer a {
+            padding: 15px;
+            color: #70757a;
+            font-size: 14px;
+            font-family: arial, sans-serif;
+            text-decoration-color: #70757a;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+            color: #70757a;
+        }
+
+        @media only screen and (max-width: 600px) {
+            #M2 {
+                display: flex;
+                justify-content: space-evenly;
+            }
+        }
     </style>
 </head>
 
@@ -111,8 +170,34 @@
                 })
             </script
         </div>
-
     </div>
+
+
+
+
+
+
+
+    <footer>
+        <div id="M1" class="container-fluid">
+            <div id="M2" class="flex-container">
+                <div>
+                    <a
+                        href="https://about.google/?utm_source=google-IR&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a>
+                    <a
+                        href="https://www.google.com/intl/en_ir/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+                    <a
+                        href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
+                    <a href="https://google.com/search/howsearchworks/?fg=1">How Search Works</a>
+                </div>
+                <div>
+                    <a href="https://policies.google.com/privacy?hl=en-IR&fg=1">Privacy</a>
+                    <a href="https://policies.google.com/terms?hl=en-IR&fg=1">Terms</a>
+                    <a href="https://policies.google.com/terms?hl=en-IR&fg=1">Settings</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
